@@ -1,0 +1,38 @@
+#body {
+	background-color: black;
+}
+#main {
+	background-color: darkgrey;'
+	width: 60%;
+	height: auto;
+}
+#header {
+	color: white;
+	font-size: 400%;
+	background-color: red;
+}
+#curry {
+	height:50%;
+	width:50%;
+}
+#bot {
+	background-color: lightblue
+}
+#cookedcurry {
+	
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}

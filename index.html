@@ -1,0 +1,89 @@
+<html>
+	<head>
+		<title>Clicker Game</title>
+		<link rel="stylesheet" type="text/css" href="core/style.css">
+		<script type="text/javascript" src="core/script.js"></script>
+	</head>
+	<body id="body" onLoad="Int();">
+		<div id="main">
+			<div id="top">
+				<center>
+				<h1 id="header">Curry Clicker</h1>
+				<h2 id="cookedcurry">Curry Cooked: <a id="clicks">0</a></h2>
+				</center>
+			</div>
+			<div id="mid">
+				<center>
+				<img id="curry" src="core\images\curry.png" onClick="onClick()">
+				</center>
+			</div>
+			<center>
+			<h2 id="subheader">The Shop</h2>
+			</center>
+			<div id="bot">
+				<center>
+				<table id="shop">
+					<tr>
+						<th>Item</th>
+						<th>Cost</th>
+						<th>Effects</th>
+						<th>Buy</th>
+						<th>Amount</th>
+					</tr>
+					<tr>
+						<td>Auto Cooker</td>
+						<td>200</td>
+						<td>Auto Cooks Curry</td>
+						<td><button onClick="buyAuto();">Buy Auto Cooker</button></td>
+						<td id="AmAuto"></td>
+					</tr>
+					<tr>
+						<td>Asian</td>
+						<td>400</td>
+						<td>Click amount to 2</td>
+						<td><button onClick="buyAsian();">Buy Asian</button></td>
+						<td id="AmAsian"></td>
+					</tr>
+					<tr>
+						<td>Curry Farm</td>
+						<td>1000</td>
+						<td>Click amount to 30</td>
+						<td><button onClick="buyFarm();">Buy Curry Farm</button></td>
+						<td id="AmFarm"></td>
+					</tr>
+					<tr>
+						<td>Curry Factory</td>
+						<td>2000</td>
+						<td>Click amount to 3</td>
+						<td><button onClick="buyFactory();">Buy Curry Factory</button></td>
+						<td id="AmFactory"></td>
+					</tr>
+					<tr>
+						<td>Curry Munchers</td>
+						<td>5000</td>
+						<td>Click amount to 8</td>
+						<td><button onClick="buyMuncher();">Buy Curry Munchers</button></td>
+						<td id="AmMuncher"></td>
+					</tr>
+					<tr>
+						<td>Curry Chicken</td>
+						<td>20000</td>
+						<td>Click amount to 30</td>
+						<td><button onClick="buyChicken();">Buy Curry Chicken</button></td>
+						<td id="AmChicken"></td>
+					</tr>
+					<tr>
+						<td>Compow Chicken</td>
+						<td>1000000</td>
+						<td>Click amount to 100</td>
+						<td><button onClick="buyCompow();">Buy Compow Chicken</button></td>
+						<td id="AmCompow"></td>
+					</tr>
+				</table>
+				</center>
+				
+				<!-- <button onClick="JakeIsTheBest();">De-Bug</button> -->
+			</div>
+		</div>
+	</body>
+</html>
