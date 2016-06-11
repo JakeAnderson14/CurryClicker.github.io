@@ -22,6 +22,11 @@ function Int()
 	document.getElementById("AmCompow").innerHTML = AmCompow;
 }
     
+	
+	 
+	
+	
+	
 function onClick() {
 	clicks = clicks + per_click;
 	fixed_clicks = clicks.toFixed(2);
@@ -32,6 +37,8 @@ function autoClick() {
 	clicks = clicks + per_auto;
 	fixed_auto_clicks = clicks.toFixed(3);
     document.getElementById("clicks").innerHTML = fixed_auto_clicks;
+	document.getElementById("ClickAm").innerHTML = per_click;
+	document.getElementById("AutoAm").innerHTML = per_auto;
 }
 
 function buyAuto() {
