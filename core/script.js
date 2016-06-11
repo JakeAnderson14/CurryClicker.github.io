@@ -22,20 +22,15 @@ function Int()
 	document.getElementById("AmCompow").innerHTML = AmCompow;
 }
     
-	
-	 
-	
-	
-	
 function onClick() {
 	clicks = clicks + per_click;
-	fixed_clicks = clicks.toFixed(2);
+	fixed_clicks = clicks.toFixed(1);
     document.getElementById("clicks").innerHTML = fixed_clicks;
 };
 
 function autoClick() {
 	clicks = clicks + per_auto;
-	fixed_auto_clicks = clicks.toFixed(3);
+	fixed_auto_clicks = clicks.toFixed(1);
     document.getElementById("clicks").innerHTML = fixed_auto_clicks;
 	document.getElementById("ClickAm").innerHTML = per_click;
 	document.getElementById("AutoAm").innerHTML = per_auto;
@@ -48,7 +43,7 @@ function buyAuto() {
 	{
 	clicks = clicks - 200;
 	document.getElementById("clicks").innerHTML = clicks;
-	per_auto = per_auto + 0.005;
+	per_auto = per_auto + 0.5;
 	AmAuto = AmAuto + 1;
 	document.getElementById("AmAuto").innerHTML = AmAuto;
 	}
@@ -62,7 +57,7 @@ function buyAsian() {
 	{
 	clicks = clicks - 400;
 	document.getElementById("clicks").innerHTML = clicks;
-	per_click = per_click * 2;
+	per_click = per_click + 1;
 	AmAsian = AmAsian + 1;
 	document.getElementById("AmAsian").innerHTML = AmAsian;
 	}
@@ -76,7 +71,7 @@ function buyFarm() {
 	{
 	clicks = clicks - 1000;
 	document.getElementById("clicks").innerHTML = clicks;
-	per_click = per_click * 3;
+	per_click = per_click + 3;
 	AmFarm = AmFarm + 1;
 	document.getElementById("AmFarm").innerHTML = AmFarm;
 	}
@@ -90,7 +85,7 @@ function buyFactory() {
 	{
 	clicks = clicks - 2000;
 	document.getElementById("clicks").innerHTML = clicks;
-	per_click = per_click * 8;
+	per_click = per_click + 8;
 	AmFactory = AmFactory + 1;
 	document.getElementById("AmFactory").innerHTML = AmFactory;
 	}
