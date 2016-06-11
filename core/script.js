@@ -4,17 +4,20 @@ var per_auto = 0;
 var timer = setInterval( autoClick, 1000);
 var AmAuto = 0;
 var AmAsian = 0;
+var AmBCP = 0;
+var AmBCG = 0;
 var AmFarm = 0;
 var AmFactory = 0;
 var AmMuncher = 0;
 var AmChicken = 0;
 var AmCompow = 0;
 
-function Int()
-{
+function Int(){
 	console.log("This Game is Copy-Righted to Jake Anderson.")
 	document.getElementById("AmAuto").innerHTML = AmAuto;
 	document.getElementById("AmAsian").innerHTML = AmAsian;
+	document.getElementById("AmBCP").innerHTML = AmBCP;
+	document.getElementById("AmBCG").innerHTML = AmBCG;
 	document.getElementById("AmFarm").innerHTML = AmFarm;
 	document.getElementById("AmFactory").innerHTML = AmFactory;
 	document.getElementById("AmMuncher").innerHTML = AmMuncher;
@@ -60,6 +63,32 @@ function buyAsian() {
 	per_click = per_click + 1;
 	AmAsian = AmAsian + 1;
 	document.getElementById("AmAsian").innerHTML = AmAsian;
+	}
+}
+
+function buyBCP() {
+	if (clicks < 600) {
+	}
+	else
+	{
+	clicks = clicks - 600;
+	document.getElementById("clicks").innerHTML = clicks;
+	per_auto = per_auto + 1;
+	AmBCP = AmBCP + 1;
+	document.getElementById("AmBCP").innerHTML = AmBCP;
+	}
+}
+
+function buyBCG() {
+	if (clicks < 1000) {
+	}
+	else
+	{
+	clicks = clicks - 600;
+	document.getElementById("clicks").innerHTML = clicks;
+	per_auto = per_auto + 2.5;
+	buyBCG = buyBCG + 1;
+	document.getElementById("buyBCG").innerHTML = buyBCG;
 	}
 }
 
