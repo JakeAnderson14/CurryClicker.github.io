@@ -1,4 +1,4 @@
-var clicks = 0;
+var clicks = document.getElementById("clicks");
 var per_click = 1;
 var per_auto = 0;
 var timer = setInterval( autoClick, 1000);
@@ -24,7 +24,15 @@ function Int(){
 	document.getElementById("AmChicken").innerHTML = AmChicken;
 	document.getElementById("AmCompow").innerHTML = AmCompow;
 }
-    
+
+function save(){
+
+}
+
+function load(){
+
+}
+
 function onClick() {
 	clicks = clicks + per_click;
 	fixed_clicks = clicks.toFixed(1);
@@ -87,8 +95,8 @@ function buyBCG() {
 	clicks = clicks - 600;
 	document.getElementById("clicks").innerHTML = clicks;
 	per_auto = per_auto + 2.5;
-	buyBCG = buyBCG + 1;
-	document.getElementById("buyBCG").innerHTML = buyBCG;
+	AmBCG = AmBCG + 1;
+	document.getElementById("AmBCG").innerHTML = AmBCG;
 	}
 }
 
@@ -159,7 +167,23 @@ function buyCompow() {
 	}
 }
 
-function JakeIsTheBest(){
-	clicks = clicks + 5000;
+function BetaTester() {
+    var password = prompt("Please enter the Password to get access to the Beta Version of Curry Clicker");
+    
+	if (password != "BetaTesters")
+	{
+		alert("Wrong Password");
+		//Wrong Password
+	}
+	else
+	{
+		alert("Welcome Beta Tester");
+		load('Beta.html');
+		//Take them to beta
+	}
+}
+
+function BetaTesting(){
+	clicks = clicks + 100000;
 	document.getElementById("clicks").innerHTML = clicks;
 }
